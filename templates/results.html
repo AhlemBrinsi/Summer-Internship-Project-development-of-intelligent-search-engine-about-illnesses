@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>"{{ query | upper }}"</h1>
+    <div class="results">
+        {% if results %}
+            <ul>
+                {% for word, result in results.items() %}
+                    <li>
+                        <strong>{{ word }} ({{ result.count }} occurrences)</strong><br>
+                        Sentences:<br>
+                        <ul>
+                            {% for sentence in result.sentences %}
+                                <li>{{ sentence }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No results found for "{{ query }}".</p>
+        {% endif %}
+    </div>
+</body>
+</html>
