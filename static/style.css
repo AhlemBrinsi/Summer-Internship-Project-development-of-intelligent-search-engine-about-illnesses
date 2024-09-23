@@ -1,0 +1,50 @@
+/* Add your CSS styles here */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(219, 231, 242);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight: 100;
+    text-align: center;
+}
+.custom-search-form {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 85px;
+}
+.custom-search-field {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(219, 231, 242);
+    border-radius: 5px;
+}
+.custom-search-submit {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px 40px;
+    background-color: #7fa6d4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.custom-search-submit:hover {
+    background-color: #6691c1;
+}
